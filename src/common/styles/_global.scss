@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+	background-color: black;
+}
+
+.detail {
+	font-family: $detail-one-font-family;
+	font-weight: $detail-one-font-weight;
+	font-size: $detail-one-font-size;
+}
+
+.title-one {
+	font-family: $title-one-font-family;
+	font-weight: $title-one-font-weight;
+	font-size: $title-one-font-size;
+	color: $title-one-color;
+}
+
+.title-three {
+	font-family: $title-three-font-family;
+	font-weight: $title-three-font-weight;
+	font-size: $title-three-font-size;
+	color: $title-three-color;
+}

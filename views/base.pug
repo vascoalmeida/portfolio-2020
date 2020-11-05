@@ -1,0 +1,13 @@
+doctype html
+head
+    meta(charset="utf-8")
+    title Vasco de Almeida &#8208 Creative Developer
+    link(rel="stylesheet" type="text/css" href="/main.css")
+
+body
+    include common/navigator.pug
+
+    main#content(data-page=page)
+        block content
+
+    script(async src="/main.js")

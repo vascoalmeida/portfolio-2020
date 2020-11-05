@@ -1,0 +1,10 @@
+extends ../base.pug
+
+block content
+	div.slider
+		each project in projects
+			article.slide.project
+				div.slide__info
+					h2.slide__info-title=project.title
+				img.slide__cover(src=project.cover draggable="false" data-gl-component="projectCover")
+	a(href="/case") case

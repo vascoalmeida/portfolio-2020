@@ -1,0 +1,49 @@
+.slider {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: grab;
+	//padding: 15vw 0;
+
+    &.vertical {
+        flex-direction: column;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    &.horizontal {
+        flex-direction: row;
+        overflow-y: hidden;
+        overflow-x: scroll;
+    }
+
+	.slide {
+		width: 80%;
+		position: relative;
+		display: flex;
+		margin: 10vw 0;
+
+		&.alternate {
+			flex-direction: row-reverse;
+		}
+
+		&__info {
+
+			&-title {
+				color: green;
+				user-select: none;
+				display: none; // Delete to show slide title
+			}
+		}
+
+		&__cover {
+			user-select: none;
+			opacity: 0;
+			margin: 0 auto;
+			cursor: pointer;
+			width: 80%;
+		}
+	}
+}

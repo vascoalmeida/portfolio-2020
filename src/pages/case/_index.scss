@@ -1,0 +1,69 @@
+#content[data-page="case"] {
+	.cover-container {
+		width: 100vw;
+		height: 90vh;
+		z-index: 0;
+		overflow: hidden;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.project-cover {
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			filter: brightness(70%);
+		}
+
+		.project-name {
+			z-index: 0;
+			text-transform: uppercase;
+			letter-spacing: 0.5rem;
+			color: #FFFFFF;
+		}
+	}
+
+	.project-galery {
+		position: relative;
+		width: 100vw;
+		min-height: 100vh;
+		z-index: 1;
+		border: 1px solid transparent; // To prevent border collapsing
+		background-color: #FFFFFF;
+
+		.project-info {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 40vw;
+			z-index: 2;
+			transform: translateY(-50%);
+			background-color: #161616;
+			color: white;
+			padding: 5vw;
+			display: flex;
+			flex-wrap: wrap;
+			font-size: 0.85rem;
+
+			&__block {
+				min-width: 20rem;
+				font-family: "Helvetica";
+
+				.block__label {
+					text-transform: uppercase;
+					letter-spacing: 3px;
+					margin-right: 1rem;
+					opacity: 0.5;
+				}
+			}
+		}
+
+		.project-image {
+			display: block;
+			width: 60vw;
+			margin: 10vw auto;
+		}
+	}
+}

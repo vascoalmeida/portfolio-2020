@@ -1,0 +1,9 @@
+@import "common/components/slider/_index.scss";
+
+#content[data-page="work"] {
+	a {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}

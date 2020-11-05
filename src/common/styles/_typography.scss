@@ -1,0 +1,36 @@
+// Actor Regular
+@font-face {
+	font-family: "Actor";
+	font-weight: 500;
+	src: url("/public/fonts/Actor/Actor-Regular.ttf");
+}
+
+// Lato Regular
+@font-face {
+	font-family: "Lato";
+	font-weight: 500;
+	src: url("/public/fonts/Lato/Lato-Regular.ttf");
+}
+
+// Lato Black
+@font-face {
+	font-family: "Lato";
+	font-weight: 900;
+	src: url("/public/fonts/Lato/Lato-Black.ttf");
+}
+
+// Titles
+$title-one-font-family: "Lato";
+$title-one-font-weight: 900;
+$title-one-font-size: 6rem;
+$title-one-color: white;
+
+$title-three-font-family: "Lato";
+$title-three-font-weight: 900;
+$title-three-font-size: 2rem;
+$title-three-color: white;
+
+// Misc
+$detail-one-font-family: "Actor";
+$detail-one-font-weight: 500;
+$detail-one-font-size: 0.8rem;

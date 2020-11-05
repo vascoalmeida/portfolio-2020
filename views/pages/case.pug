@@ -1,0 +1,17 @@
+extends ../base.pug
+
+block content
+	div.cover-container
+		img.project-cover(src=coverImage)
+		h1.project-name.title-one=projectName
+
+			
+	div.project-galery(data-gl-component="wobblyElement")
+		div.project-info
+			each info in projectInfo
+				div.project-info__block
+					span.block__label.text=info.label
+					span.block__value.text=info.value
+
+		each image in projectImages
+			img.project-image(src=image)
